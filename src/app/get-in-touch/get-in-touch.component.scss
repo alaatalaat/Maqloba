@@ -1,0 +1,49 @@
+.container-fluid{
+  .row{
+    background:#f3f3f3;
+    >div{background:#f3f3f3;}
+    >div:first-child{
+      margin: auto;
+      >div{
+        >.row{
+          margin: 15px 0px;
+          span{
+            display:inline-block;width:40px;height:40px;border:1px solid #F99E22;
+            justify-content:center;align-items:center;text-align:center;
+            flex-direction:column;display:flex;border-radius:50%;
+            .fa-whatsapp,.fa-map-marker{font-size:25px;color:#F99E22;}
+            .fa-envelope{font-size:20px;color:#F99E22;}
+            .fa-whatsapp:hover,.fa-envelope:hover{color:#fff;}
+          }
+          span:hover{
+            background:#F99E22;border-color:#70e000;
+            .fa{color:#fff;}
+          }
+          .col-10{
+            justify-content:center;align-items:center;
+            p{height:40px;line-height:40px;font-weight:bold;}
+          }
+          a{color:#253237;text-decoration:none;}
+        }
+        svg{width:23px;height:auto;}
+        svg:hover{fill:#F99E22;}
+        .fa-twitter,.fa-instagram{font-size:25px;}
+        .fa-twitter:hover,.fa-instagram:hover{color:#F99E22;;}
+      }
+      padding-left:10px;
+    }
+    div:nth-child(2){
+      //padding-left:0px;
+      form{
+        h4{font-weight:bold;color:#253237;}
+        input,textarea{outline:none;padding:5px;margin-top:10px;
+          border-color:1px solid #f3f3f3;}
+        button[type="submit"]{
+          background: #F99E22;color:#fff;padding: 5px 25px;
+          border:none;border-radius:30px;margin-top:10px;font-weight:bold;
+        }
+        padding-bottom:30px;
+      }
+    }
+  }
+}

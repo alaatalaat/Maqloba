@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --darkGray:#484B54;
+  --orange:#F99E22;
+  --lightGray:#7f7f7f;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+body{direction:rtl;}
+

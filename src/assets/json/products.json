@@ -1,0 +1,989 @@
+{
+  "products": [
+    {
+      "mealName": "مقلوبة دجاج",
+      "mealImg": "../../assets/menu/maqloba1.jpg",
+      "mealDescription": "مطبوخة على الطريقة السعودية مع القرع والباذنجان والبطاطس والجزر. وتقدم مع صوص الطحينة + معبوچ أحمر حاااار (صغير=ربع دجاجة، وسط=نص دجاجة، كبير=دجاجة، عائلي=دجاجتين)",
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 26,
+        "calories": 1578
+      },
+      "medium": {
+        "price": 38,
+        "calories": 2176
+      },
+      "large": {
+        "price": 67,
+        "calories": 3624
+      },
+      "family": {
+        "price": 112,
+        "calories": 6147
+      },
+      "id": 1
+    },
+    {
+      "mealName": "مقلوبة لحم ",
+      "mealImg": "../../assets/menu/maqloba2.jpg",
+      "mealDescription": "مطبوخة على الطريقة السعودية مع القرع والباذنجان والبطاطس والجزر. وتقدم مع صوص الطحينة + معبوچ أحمر حاااار (صغير=شخص، وسط=شخصين، كبير= 3 اشخاص، عائلي= 4-5 أشخاص) تقريباً",
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 48,
+        "calories": 1746
+      },
+      "medium": {
+        "price": 84,
+        "calories": 2501
+      },
+      "large": {
+        "price": 129,
+        "calories": 3907
+      },
+      "family": {
+        "price": 239,
+        "calories": 6394
+      },
+      "id": 2
+    },
+    {
+      "mealName": "مقلوبة خضار",
+      "mealImg": "../../assets/menu/maqloba3.jpg",
+      "mealDescription": "مطبوخة على الطريقة السعودية مع القرع والباذنجان والبطاطس والجزر. وتقدم مع صوص الطحينة + معبوچ أحمر حاااار (صغير=شخص، وسط=شخصين، كبير= 3 اشخاص، عائلي= 4-5 أشخاص) تقريباً",
+      "price": 0,
+      "kind": "mainDish",
+      "small": {
+        "price": 21,
+        "calories": 1277
+      },
+      "medium": {
+        "price": 26,
+        "calories": 1662
+      },
+      "large": {
+        "price": 44,
+        "calories": 2654
+      },
+      "family": {
+        "price": 63,
+        "calories": 4303
+      },
+      "id": 3
+    },
+    {
+      "mealName": "مجبوس دجاج",
+      "mealImg": "../../assets/menu/maqloba4.jpg",
+      "mealDescription": "رز بشاور عنبر شغل عددددل مزين بالكشنة المميزة و المكسرات. يقدم مع: الدقوس الكويتي + معبوچ أحمر حاااار (صغير=ربع دجاجة، وسط=نص دجاجة، كبير=دجاجة، عائلي=دجاجتين)",
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 26,
+        "calories": 1091
+      },
+      "medium": {
+        "price": 38,
+        "calories": 1622
+      },
+      "large": {
+        "price": 67,
+        "calories": 3041
+      },
+      "family": {
+        "price": 112,
+        "calories": 4912
+      },
+      "id": 4
+    },
+    {
+      "mealName": "مجبوس لحم",
+      "mealImg": "../../assets/menu/maqloba5.jpg",
+      "mealDescription": null,
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 48,
+        "calories": 1242
+      },
+      "medium": {
+        "price": 84,
+        "calories": 1899
+      },
+      "large": {
+        "price": 129,
+        "calories": 3288
+      },
+      "family": {
+        "price": 239,
+        "calories": 5087
+      },
+      "id": 5
+    },
+    {
+      "mealName": "رز مجبوس (مع دقوس)",
+      "mealImg": "../../assets/menu/maqloba6.jpg",
+      "mealDescription": "رز بشاور عنبر شغل عددددل مزين بالكشنة المميزة و المكسرات. الحجم الكبير و العائلي يقدم مع: الدقوس الكويتي + معبوچ أحمر حاااار",
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 14,
+        "calories": 848
+      },
+      "medium": {
+        "price": 18,
+        "calories": 1404
+      },
+      "large": {
+        "price": 30,
+        "calories": 2574
+      },
+      "family": {
+        "price": 52,
+        "calories": 4095
+      },
+      "id": 6
+    },
+    {
+      "mealName": "برياني دجاج ",
+      "mealImg": "../../assets/menu/maqloba7.jpg",
+      "mealDescription": "طبقنا الخطييييير و المشهور يقدم مع: سلطة زبادي + صوص أخضر حااار (صغير=ربع دجاجة، وسط=نص دجاجة، كبير=دجاجة، عائلي=دجاجتين)",
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 26,
+        "calories": 2015
+      },
+      "medium": {
+        "price": 38,
+        "calories": 2962
+      },
+      "large": {
+        "price": 67,
+        "calories": 5763
+      },
+      "family": {
+        "price": 112,
+        "calories": 9386
+      },
+      "id": 7
+    },
+    {
+      "mealName": "برياني لحم ",
+      "mealImg": "../../assets/menu/maqloba8.jpg",
+      "mealDescription": "طبقنا الخطييييير و المشهور يقدم مع: سلطة زبادي + معبوج أخضر حااار (صغير=شخص، وسط=شخصين، كبير= 3 اشخاص، عائلي= 4-5 أشخاص) تقريباً",
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 48,
+        "calories": 2162
+      },
+      "medium": {
+        "price": 84,
+        "calories": 3344
+      },
+      "large": {
+        "price": 129,
+        "calories": 5960
+      },
+      "family": {
+        "price": 239,
+        "calories": 9271
+      },
+      "id": 8
+    },
+    {
+      "mealName": "برياني رز برياني",
+      "mealImg": "../../assets/menu/maqloba9.jpg",
+      "mealDescription": "طبقنا الخطييييير و المشهور (الحجم الكبير و العائلي يقدم مع: سلطة الزبادي + معبوج أخضر حار)",
+      "price": "0",
+      "kind": "mainDish",
+      "small": {
+        "price": 14,
+        "calories": 1917
+      },
+      "medium": {
+        "price": 18,
+        "calories": 3162
+      },
+      "large": {
+        "price": 30,
+        "calories": 5627
+      },
+      "family": {
+        "price": 52,
+        "calories": 8989
+      },
+      "id": 9
+    },
+    {
+      "mealName": "مربين روبيان",
+      "mealImg": "../../assets/menu/maqloba10.jpg",
+      "mealDescription": "مربين الروبيان مطبوخ مع البهارات و الأعشاب المختارة. يقدم مع : (صوص الطحينة+معبوج أحمر حاااار)",
+      "price": 0,
+      "kind": "mainDish",
+      "small": {
+        "price": 44,
+        "calories": 2681
+      },
+      "medium": {
+        "price": 69,
+        "calories": 3786
+      },
+      "large": {
+        "price": 125,
+        "calories": 6640
+      },
+      "family": {
+        "price": 207,
+        "calories": 9988
+      },
+      "id": 10
+    },
+    {
+      "mealName": "مقلوبة برغل دجاج",
+      "mealImg": "../../assets/menu/maqloba11.jpg",
+      "mealDescription": "كبسة برغل مزينه بالزهرة و الباذنجان والبطاطس و حمسة الجزر. تقدم مع: صوص الطحينة + معبوج أحمر حاااار (صغير=ربع دجاجة، وسط=نص دجاجة، كبير=دجاجة، عائلي=دجاجتين)",
+      "price": "0",
+      "kind": "mainDish",
+      "small": {
+        "price": 26,
+        "calories": 1255
+      },
+      "medium": {
+        "price": 38,
+        "calories": 2177
+      },
+      "large": {
+        "price": 67,
+        "calories": 3700
+      },
+      "family": {
+        "price": 112,
+        "calories": 6351
+      },
+      "id": 11
+    },
+    {
+      "mealName": "مقلوبة برغل خضار ",
+      "mealImg": "../../assets/menu/maqloba12.jpg",
+      "mealDescription": null,
+      "price": null,
+      "kind": "mainDish",
+      "small": {
+        "price": 21,
+        "calories": 1360
+      },
+      "medium": {
+        "price": 26,
+        "calories": 2046
+      },
+      "large": {
+        "price": 44,
+        "calories": 3630
+      },
+      "family": {
+        "price": 63,
+        "calories": 6049
+      },
+      "id": 12
+    },
+    {
+      "mealName": "دقوس كويتي",
+      "mealImg": "../../assets/menu/sides/1.jpg",
+      "mealDescription": "مرق طماطم مطبوخ على الطريقة الكويتية التقليدية مع بهارات خاصة",
+      "price": "6",
+      "kind": "sideItems",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 13
+    },
+    {
+      "mealName": "سلطة زبادي",
+      "mealImg": "../../assets/menu/sides/2.jpg",
+      "mealDescription": null,
+      "price": "4",
+      "kind": "sideItems",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 14
+    },
+    {
+      "mealName": "طرشي",
+      "mealImg": "../../assets/menu/sides/3.jpg",
+      "mealDescription": "",
+      "price": 5,
+      "kind": "sideItems",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 15
+    },
+    {
+      "mealName": "طحينة",
+      "mealImg": "../../assets/menu/sides/4.jpg",
+      "mealDescription": null,
+      "price": 4,
+      "kind": "sideItems",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 16
+    },
+    {
+      "mealName": "معبوج احمر",
+      "mealImg": "../../assets/menu/sides/5.jpg",
+      "mealDescription": null,
+      "price": 4,
+      "kind": "sideItems",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 17
+    },
+    {
+      "mealName": "كشنة بصل مقرمش مع مكسرا ",
+      "mealImg": "../../assets/menu/sides/6.jpg",
+      "mealDescription": null,
+      "price": 6,
+      "kind": "sideItems",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 18
+    },
+    {
+      "mealName": "معبوج اخضر ",
+      "mealImg": "../../assets/menu/sides/7.jpg",
+      "mealDescription": null,
+      "price": 4,
+      "kind": "sideItems",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 19
+    },
+    {
+      "mealName": " حبز بر",
+      "mealImg": "../../assets/menu/sides/8.png",
+      "mealDescription": null,
+      "price": 1,
+      "kind": "sideItems",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 20
+    },
+    {
+      "mealName": "خبز ابيض",
+      "mealImg": "../../assets/menu/sides/8.png",
+      "mealDescription": null,
+      "price": 1,
+      "kind": "sideItems",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 21
+    },
+    {
+      "mealName": "جريش احمر ",
+      "mealImg": "../../assets/menu/moqbelat/1.jpg",
+      "mealDescription": "",
+      "price": 0,
+      "kind": "moqbelat",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 22
+    },
+    {
+      "mealName": "شوربة مقلوبة المميزة ",
+      "mealImg": "../../assets/menu/moqbelat/2.jpg",
+      "mealDescription": "",
+      "price": 5,
+      "kind": "moqbelat",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 23
+    },
+    {
+      "mealName": "سلطة الخضار الموسمية",
+      "mealImg": "../../assets/menu/moqbelat/3.jpg",
+      "mealDescription": "",
+      "price": 11,
+      "kind": "moqbelat",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 24
+    },
+    {
+      "mealName": "مضروبة",
+      "mealImg": "../../assets/menu/moqbelat/4.jpg",
+      "mealDescription": "أكلة شعبية خليجية نقدمها على الطريقة الإماراتية. اخت الجريش بس مطبوخة بحبوب القمح والأعشاب مع الدجاج",
+      "price": 0,
+      "kind": "moqbelat",
+      "small": {
+        "price": 10,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": 15,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 25
+    },
+    {
+      "mealName": "مرق قرع",
+      "mealImg": "../../assets/menu/moqbelat/5.jpg",
+      "mealDescription": "لمحبي القرع لااااا يفوتكم محموس مع الطماطم وبهاراتنا الخاصة (يقدم مع الخبز)",
+      "price": 10,
+      "kind": "moqbelat",
+      "small": {
+        "price": 10,
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": 15,
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 26
+    },
+    {
+      "mealName": "بامية صوص",
+      "mealImg": "../../assets/menu/moqbelat/6.jpg",
+      "mealDescription": "يحضر على الطريقة العراقية عجيييييب و على كيف كيفك (يقدم مع الخبز) ",
+      "price": 30,
+      "kind": "moqbelat",
+      "small": {
+        "price": 10,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": 15,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 27
+    },
+    {
+      "mealName": "لبن عيران طازج",
+      "mealImg": "../../assets/menu/drinks/1.jpg",
+      "mealDescription": "",
+      "price": 5,
+      "kind": "drinks",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 28
+    },
+    {
+      "mealName": "مياه صحية ",
+      "mealImg": "../../assets/menu/drinks/2.png",
+      "mealDescription": "",
+      "price": 1,
+      "kind": "drinks",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 29
+    },
+    {
+      "mealName": "بيبسي",
+      "mealImg": "../../assets/menu/drinks/3.png",
+      "mealDescription": "",
+      "price": 4,
+      "kind": "drinks",
+      "small": {
+        "price": "",
+        "calories": ""
+      },
+      "medium": {
+        "price": "",
+        "calories": ""
+      },
+      "large": {
+        "price": "",
+        "calories": ""
+      },
+      "family": {
+        "price": "",
+        "calories": ""
+      },
+      "id": 30
+    },
+    {
+      "mealName": "بيبسي دايت",
+      "mealImg": "../../assets/menu/drinks/4.png",
+      "mealDescription": "",
+      "price": 4,
+      "kind": "drinks",
+      "small": {
+        "price": 0,
+        "calories": ""
+      },
+      "medium": {
+        "price": 0,
+        "calories": ""
+      },
+      "large": {
+        "price": 0,
+        "calories": ""
+      },
+      "family": {
+        "price": 0,
+        "calories": ""
+      },
+      "id": 31
+    },
+    {
+      "mealName": "سفن اب",
+      "mealImg": "../../assets/menu/drinks/5.png",
+      "mealDescription": null,
+      "price": 4,
+      "kind": "drinks",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 32
+    },
+    {
+      "mealName": "دايت سفن اب",
+      "mealImg": "../../assets/menu/drinks/6.png",
+      "mealDescription": null,
+      "price": 4,
+      "kind": "drinks",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 33
+    },
+    {
+      "mealName": "ميرندا حمضيات",
+      "mealImg": "../../assets/menu/drinks/7.png",
+      "mealDescription": null,
+      "price": 4,
+      "kind": "drinks",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 34
+    },
+    {
+      "mealName": "شعيريه ( بلاليط)",
+      "mealImg": "../../assets/menu/sweets/1.jpg",
+      "mealDescription": null,
+      "price": 9,
+      "kind": "dessert",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 35
+    },
+    {
+      "mealName": "برغ برس",
+      "mealImg": "../../assets/menu/maqlobers/1.jpg",
+      "mealDescription": "",
+      "price": 17,
+      "kind": "mqlo",
+      "small": {
+        "price": 0,
+        "calories": ""
+      },
+      "medium": {
+        "price": 0,
+        "calories": ""
+      },
+      "large": {
+        "price": 0,
+        "calories": ""
+      },
+      "family": {
+        "price": 0,
+        "calories": ""
+      },
+      "id": 36
+    },
+    {
+      "mealName": "مربيا برس",
+      "mealImg": "../../assets/menu/maqlobers/2.jpg",
+      "mealDescription": null,
+      "price": 29,
+      "kind": "mqlo",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 37
+    },
+    {
+      "mealName": "مچبو برس",
+      "mealImg": "../../assets/menu/maqlobers/3.jpg",
+      "mealDescription": null,
+      "price": 24,
+      "kind": "mqlo",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 38
+    },
+    {
+      "mealName": "بريا برس",
+      "mealImg": "../../assets/menu/maqlobers/4.jpg",
+      "mealDescription": null,
+      "price": 24,
+      "kind": "mqlo",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 39
+    },
+    {
+      "mealName": "رز برياني بتر تشكن مكس",
+      "mealImg": "../../assets/menu/maqlobers/5.jpg",
+      "mealDescription": null,
+      "price": 24,
+      "kind": "mqlo",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 40
+    },
+    {
+      "mealName": "رز أبيض بتر تشكن مكس",
+      "mealImg": "../../assets/menu/maqlobers/6.jpg",
+      "mealDescription": null,
+      "price": 24,
+      "kind": "mqlo",
+      "small": {
+        "price": null,
+        "calories": null
+      },
+      "medium": {
+        "price": null,
+        "calories": null
+      },
+      "large": {
+        "price": null,
+        "calories": null
+      },
+      "family": {
+        "price": null,
+        "calories": null
+      },
+      "id": 41
+    }
+  ],
+  "cartProducts": []
+}

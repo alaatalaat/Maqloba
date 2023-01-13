@@ -1,0 +1,66 @@
+<div class="text-center" id="header">
+  <h4>{{'login'|translate}} | <span>{{'signin'|translate}}</span></h4>
+</div>
+<!-- {{registerForm.value | json}} -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-7 mx-auto mt-4">
+      <form [formGroup]="registerForm" (ngSubmit)="enrollData()">
+        <div>
+          <label>{{"fname"|translate}}</label>
+          <input type="text" [placeholder]="'fname'|translate" formControlName="fname"
+          [class.border-danger]="firstName?.invalid && firstName?.touched ">
+        </div>
+
+        <div>
+          <label>{{'lname'|translate}}</label>
+          <input type="text" [placeholder]="'lname'|translate" formControlName="lname"
+          [class.border-danger]="lastName?.invalid && lastName?.touched ">
+        </div>
+
+        <div>
+          <label>{{'uremail'|translate}}</label>
+          <input type="email" [placeholder]="'uremail'|translate" formControlName="email"
+          [class.border-danger]="email?.invalid && email?.touched ">
+        </div>
+
+        <div>
+          <label>{{'paaword'|translate}}</label>
+          <input type="password" [placeholder]="'paaword'|translate" formControlName="password"
+          [class.border-danger]="password?.invalid && password?.touched ">
+        </div>
+
+        <div>
+          <label>{{'confirmPass'|translate}}</label>
+          <input type="password" [placeholder]="'confirmPass'|translate"
+          formControlName="confirmPassword"
+          [class.border-danger]="confirmPassword?.invalid && confirmPassword?.touched ||registerForm.errors?.['UnmatchedPassword']">
+          <b class="text-danger">
+            <small *ngIf="registerForm?.errors?.['UnmatchedPassword']">{{"notMatch"|translate}}</small>
+          </b>
+        </div>
+
+        <div>
+          <label>{{'kind'|translate}}</label>
+          <input type="radio" value="male" name="genderControl" formControlName="genderControl"> {{'male'|translate}}
+          <input type="radio" value="female" name="genderControl" formControlName="genderControl"> {{'female'|translate}}
+        </div>
+
+        <div>
+          <label>{{'phone1'|translate}}</label>
+          <input type="text" [placeholder]="'phone1'|translate" formControlName="phone"
+          [class.border-danger]="phone?.invalid && phone?.touched ">
+          <div *ngIf="phone?.invalid && phone?.touched">
+            <small *ngIf="phone?.errors?.maxlength">يجب ادخال  رقم موبايل صحيح</small>
+          </div>
+
+          <div formArrayName="antherPhone" *ngFor="let ph of antherPhone.controls let i = index">
+            <input type="text" [placeholder]="'phone2'|translate" [formControlName]="i">
+          </div>
+          <button #addAntherNum (click)="addAntherPhone(addAntherNum)" type="button" class="btn bg-light" style="float:left;">{{'addOtherNum'|translate}}</button>
+        </div>
+        <button type="submit" class="btn" routerLink="/login">{{'signup'|translate}}</button>
+      </form>
+    </div>
+  </div>
+</div>

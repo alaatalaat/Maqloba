@@ -1,0 +1,208 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto py-2">
+      <li class="nav-item rounded" [ngClass]=" x.active ? 'active':'not'"
+       *ngFor="let x of arr;let i = index" (click)="activeTab(i)">
+        {{x.tabname| translate | uppercase }}
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid" style="z-index:-1;">
+
+  <div class="row mx-4" *ngIf="arr[0].active==true">
+    <div class="col-sm-12 col-md-3" *ngFor="let prod of products">
+        <!-- SetCardStyle="#F99E22" defaultColor="#F99E22" -->
+        <div class="card my-3" (mouseenter)="prod.searchIcon =! prod.searchIcon"
+        (mouseleave)="prod.searchIcon=false"
+        (click)=" prodDetails(prod)" *ngIf="arr[0].active==true">
+          <img [src]="prod.mealImg" width="100%">
+          <div [routerLink]="['/menu',prod.id]">
+            <span>{{prod.mealName|translate}}</span>
+          </div>
+          <div id="search" (click)="closeModel(Model)"
+          [class]="prod.searchIcon?'':'d-none'" [title]="prod.mealName">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row mx-4" *ngIf="arr[1].active==true">
+    <div class="col-sm-12 col-md-3" [ngClass]="prod.kind=='mainDish'?'':'d-none'" *ngFor="let prod of products">
+        <div class="card my-3" (mouseenter)="prod.searchIcon =! prod.searchIcon"
+        (mouseleave)="prod.searchIcon=false"
+        (click)=" prodDetails(prod)" *ngIf="prod.kind=='mainDish'&&arr[1].active==true">
+          <img [src]="prod.mealImg" width="100%">
+          <div [routerLink]="['/menue',prod.id]">
+            <span>{{prod.mealName|translate}}</span>
+          </div>
+          <div (click)="closeModel(Model)" id="search"
+          [class]="prod.searchIcon?'':'d-none'" [title]="prod.mealName">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row mx-4" *ngIf="arr[2].active==true">
+    <div class="col-sm-12 col-md-3" [ngClass]="prod.kind=='sideItems'?'':'d-none'" *ngFor="let prod of products">
+        <div class="card my-3" (mouseenter)="prod.searchIcon =! prod.searchIcon"
+        (mouseleave)="prod.searchIcon=false"
+        (click)=" prodDetails(prod)" *ngIf="prod.kind=='sideItems'&&arr[2].active==true">
+          <img [src]="prod.mealImg" width="100%">
+          <div [routerLink]="['/menu',prod.id]">
+            <span>{{prod.mealName|translate}}</span>
+          </div>
+          <div (click)="closeModel(Model)" id="search" [class]="prod.searchIcon?'':'d-none'" [title]="prod.mealName">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row mx-4" *ngIf="arr[3].active==true">
+    <div class="col-sm-12 col-md-3" [ngClass]="prod.kind=='moqbelat'?'':'d-none'" *ngFor="let prod of products">
+        <div class="card my-3" (mouseenter)="prod.searchIcon =! prod.searchIcon"
+        (mouseleave)="prod.searchIcon=false"
+        (click)=" prodDetails(prod)" *ngIf="prod.kind=='moqbelat'&&arr[3].active==true">
+          <img [src]="prod.mealImg" width="100%">
+          <div [routerLink]="['/menue',prod.id]">
+            <span>{{prod.mealName|translate}}</span>
+          </div>
+          <div (click)="closeModel(Model)" id="search" [class]="prod.searchIcon?'':'d-none'" [title]="prod.mealName">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row mx-4" *ngIf="arr[4].active==true">
+    <div class="col-sm-12 col-md-3" [ngClass]="prod.kind=='drinks'?'':'d-none'" *ngFor="let prod of products">
+        <div class="card my-3" (mouseenter)="prod.searchIcon =! prod.searchIcon"
+        (mouseleave)="prod.searchIcon=false"
+        (click)=" prodDetails(prod)" *ngIf="prod.kind=='drinks'&&arr[4].active==true">
+          <img [src]="prod.mealImg" width="100%">
+          <div [routerLink]="['/menu',prod.id]">
+            <span>{{prod.mealName|translate}}</span>
+          </div>
+          <div (click)="closeModel(Model)" id="search" [class]="prod.searchIcon?'':'d-none'" [title]="prod.mealName">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row mx-4" *ngIf="arr[5].active==true">
+    <div class="col-sm-12 col-md-3" [ngClass]="prod.kind=='dessert'?'':'d-none'" *ngFor="let prod of products">
+        <div class="card my-3" (mouseenter)="prod.searchIcon =! prod.searchIcon"
+        (mouseleave)="prod.searchIcon=false"
+        (click)=" prodDetails(prod)" *ngIf="prod.kind=='dessert'&&arr[5].active==true">
+          <img [src]="prod.mealImg" width="100%">
+          <div [routerLink]="['/menu',prod.id]">
+            <span>{{prod.mealName|translate}}</span>
+          </div>
+          <div (click)="closeModel(Model)" id="search" [class]="prod.searchIcon?'':'d-none'" [title]="prod.mealName">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row mx-4" *ngIf="arr[6].active==true">
+    <div class="col-sm-12 col-md-3" [ngClass]="prod.kind=='mqlo'?'':'d-none'" *ngFor="let prod of products">
+        <div class="card my-3" (mouseenter)="prod.searchIcon =! prod.searchIcon"
+        (mouseleave)="prod.searchIcon=false"
+        (click)=" prodDetails(prod)" *ngIf="prod.kind=='mqlo'&&arr[6].active==true">
+          <img [src]="prod.mealImg" width="100%">
+          <div [routerLink]="['/menu',prod.id]">
+            <span>{{prod.mealName|translate}}</span>
+          </div>
+          <div (click)="closeModel(Model)" id="search" [class]="prod.searchIcon?'':'d-none'" [title]="prod.mealName">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <h1 class="bg-danger">{{details?.mealName}}</h1> -->
+
+<div class="container-fluid d-none" #Model id="showModel">
+  <div class="container px-0">
+      <div dir="ltr" class="w-100">
+        <div class="close"  (click)="closeModel(Model)" >
+          <span>X</span>
+        </div>
+        <hr class="m-0">
+      </div>
+  </div>
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-5 px-0  text-center">
+        <img [src]="details?.mealImg" width="90%" height="288px">
+      </div>
+      <div class="col-sm-12 col-md-7 px-0">
+        <div class="py-2 px-md-0 px-2">
+          <h4 class="mt-4">
+            <b>{{details?.mealName}}
+              <i [ngClass]="details?.like?'fa-heart':'fa-heart-o'"
+              class="fa" aria-hidden="true" (click)="favourite()"></i>
+            </b>
+          </h4>
+          <span *ngIf="details?.kind =='mainDish' ">{{details?.price}} ريال</span>
+          <span *ngIf="details?.price > details?.newPrice  && details.kind !='mainDish' ">{{details?.price}} ريال</span>
+          <span *ngIf="details?.price < details?.newPrice && details.kind !='mainDish'">{{details?.newPrice}} ريال</span>
+          <p class="mt-3">{{details?.mealDescription}}</p>
+          <div class="mx-2" id="sizes">
+            <div class="row py-3">
+              <div class="col">
+                <p class="px-3">الكمية</p>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <span class="col" (click)="decrease()">-</span>
+                  <span class="col">{{details?.count}}</span>
+                  <span class="col" (click)="increase()">+</span>
+                </div>
+              </div>
+            </div>
+            <form class="row mx-2" *ngIf="details?.kind=='mainDish'">
+              <div class="col-sm-6 col-md-3">
+                <label class="d-block"><b>صغير</b></label>
+                <input type="radio" #small (change)="checkSmall()" class="form-check-input" type="radio" name="size" [value]="details?.small.price">
+                <span class="mx-2"><b>{{details?.small.price}}</b></span>
+                <p><span>(</span>{{details?.small.calories}}<span> سعرات حرارية)</span></p>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <label class="d-block"><b>وسط</b></label>
+                <input type="radio" #medium (change)="checkMedium()"  class="form-check-input" type="radio" name="size" [value]="details?.medium.price">
+                <span class="mx-2"><b>{{details?.medium.price}}</b></span>
+                <p><span>(</span>{{details?.medium.calories}}<span> سعرات حرارية)</span></p>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <label class="d-block"><b>كبير</b></label>
+                <input type="radio" #large (change)="checkLarge()" class="form-check-input" type="radio" name="size" [value]="details?.large.price">
+                <span class="mx-2"><b>{{details?.large.price}}</b></span>
+                <p><span>(</span>{{details?.large.calories}}<span> سعرات حرارية)</span></p>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <label class="d-block"><b>عائلي</b></label>
+                <input type="radio" #family (change)="checkFamily()" class="form-check-input" type="radio" name="size" [value]="details?.family.price">
+                <span class="mx-2"><b>{{details?.family.price}}</b></span>
+                <p><span>(</span>{{details?.family.calories}}<span> سعرات حرارية)</span></p>
+              </div>
+            </form>
+          </div>
+          <!-- {{details|json}} -->
+          <button class="mx-2 btn text-center" (click)="addtoCart(details)">
+            أضف الي السلة
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

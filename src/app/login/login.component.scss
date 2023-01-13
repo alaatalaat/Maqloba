@@ -1,0 +1,26 @@
+div:first-of-type#header{
+  margin-top:150px;
+  h4{font-weight:bold;color:var(--orange);}
+  h4 span{color:#484B54;}
+}
+.container{
+  .row{
+    div{
+      form{
+        padding: 30px 15px;box-shadow: 0 0 6px rgb(0 0 0 / 10%);border-radius:5px;
+        margin-bottom:100px;
+        >div{margin-top:20px;}
+        input[type="password"],input[type="text"]{
+          width:100%;padding:5px;margin-top:2px;border:1px solid #ebebeb;
+          margin-top:5px;outline:none;
+        }
+        span{font-weight:bold;}
+        button[type="submit"]{
+          margin:20px 0px;padding: 7px 10px;
+          color:#fff;background:var(--orange);border:none;border-radius:20px;
+        }
+
+      }
+    }
+  }
+}

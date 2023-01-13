@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img src="../../assets/logo.png" class="mr-4" width="150px" height="60px">
+    <div class="collapse navbar-collapse" #collapse id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" (click)="hideNavbar(collapse)" routerLink="/home" appChangeTextColor>{{"home" | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="hideNavbar(collapse)" routerLink="/menu" appChangeTextColor>{{"menu" | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="hideNavbar(collapse)" href="#" appChangeTextColor>{{"branches" | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="hideNavbar(collapse)" routerLink="contact-us" appChangeTextColor>{{"for you" | translate}}</a>
+        </li>
+        <li class="nav-item" (click)="hideNavbar(collapse)">
+          <img src="../../assets/en.png" (click)="changeSrc(img)" #img class="nav-link" height="50px">
+        </li>
+      </ul>
+    </div>
+    <ul class="navbar-nav">
+      <div>
+        <i class="fa fa-shopping-bag px-4" (click)="hideNavbar(collapse)" aria-hidden="true" routerLink="/cart"></i>
+      </div>
+    </ul>
+    <ul class="navbar-nav">
+      <div>
+        <i class="fa fa-user-circle-o px-4" (click)="hideNavbar(collapse)" routerLink="/register" aria-hidden="true"></i>
+      </div>
+    </ul>
+  </div>
+</nav>

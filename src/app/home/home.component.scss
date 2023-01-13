@@ -1,0 +1,24 @@
+div.container-fluid{
+  background-image:url('../../assets/bg.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.row:first-of-type div{
+  background: #484b54;color:#fff;padding:10px;text-align:center;
+}
+.row:first-of-type{
+  background: rgba(33, 37, 41,0.3);
+}
+.row:nth-of-type(2){
+  background: rgba(33, 37, 41,0.3);align-items:center;
+  justify-content:center;padding:60vh 0vh
+}
+.btn{font-weight:bold;color:var(--darkGray);}
+.btn img{margin: 0px 10px;}
+.col-md-1{font-weight:bold;color:#fff;}
+.btn:hover{background:var(--orange);color:#fff;border-color:var(--orange);}
+
+

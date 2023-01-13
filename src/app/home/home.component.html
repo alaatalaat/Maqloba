@@ -1,0 +1,20 @@
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-sm-12 col-md-7 mx-auto" id="ads" [hidden]="dataAds==''">{{dataAds}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+      <button class="btn btn-light w-100" #receipt value="receipt">
+        <img src="../../assets/static-icons-1.png" width="40" height="40">{{"pickup" | translate}}
+      </button>
+    </div>
+    <div class="col-sm-12 col-md-1 text-center">{{'or'|translate}}</div>
+    <div class="col-sm-12 col-md-3">
+      <button value="delivery" class="btn btn-light w-100" routerLink="/select-address">
+        <img src="../../assets/static-icons-2.png">{{ "delivery" | translate}}
+      </button>
+      <!-- <div class="bg-info text-white"
+      *ngFor="let ax in dataAds">{{ax}}</div> -->
+    </div>
+  </div>
+</div>

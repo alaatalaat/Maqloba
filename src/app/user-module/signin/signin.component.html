@@ -1,0 +1,31 @@
+<div class="text-center" id="header">
+  <h4>تسجيل الدخول | <span>سجل</span></h4>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-7 mx-auto mt-4">
+      <form #loginForm="ngForm">
+        <!-- {{ loginForm.errors | json}} -->
+        <!-- {{ loginData | json }} -->
+        <div>
+          <input type="text" name="emai" #email="ngModel"  placeholder="بريد الكتروني" required
+           [(ngModel)]="loginData.email" [class.border-danger]="email.touched && email.invalid" usernameValidator>
+          <!-- {{email.touched}} -->
+          <span class="text-danger" *ngIf="email.touched && email.invalid">البريد الإلكتروني مطلوب</span>
+        </div>
+        <!-- {{email.errors | json}} -->
+        <div>
+          <input type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" #password="ngModel" placeholder="كلمة السر" required
+          [(ngModel)]="loginData.password" [class.border-danger]="password.touched && password.invalid">
+        </div>
+        <div>
+          <input type="checkbox" name="remmember" required #remmember
+          [(ngModel)]="loginData.remmberme"> تذكرني
+        </div>
+        <button (click)="submit()" type="submit" class="">تسجيل الدخول</button>
+        {{loginForm.status}}
+      </form>
+    </div>
+  </div>
+</div>

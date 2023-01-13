@@ -1,0 +1,71 @@
+<div class="container mt-5" style="height: 100vh;">
+  <div class="text-center" *ngIf="cartProducts.length==0">
+    <img src="../../assets/empty.png" width="50%">
+  </div>
+  <table class="table">
+    <tbody>
+      <ng-container *ngFor="let cartItem of cartProducts" >
+        <tr *ngIf="cartProducts.length>0">
+          <td><span>{{cartItem.id}}</span></td>
+          <td><span>{{cartItem.mealName}}</span></td>
+          <td *ngIf="cartItem?.kind =='mainDish' ">{{cartItem?.price}} ريال</td>
+          <td *ngIf="cartItem?.price > cartItem?.newPrice  && cartItem.kind !='mainDish' ">{{cartItem?.price}} ريال</td>
+          <td *ngIf="cartItem?.price < cartItem?.newPrice && cartItem.kind !='mainDish'">{{cartItem?.newPrice}} ريال</td>
+          <td>{{cartItem.count}}</td>
+          <td><img [src]="cartItem.mealImg" width="70px"></td>
+          <td>{{cartItem.mealDescription}}</td>
+          <td><i (click)="update(cartItem)" class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+          <td><i class="fa fa-trash-o" (click)="remove(cartItem.id)" aria-hidden="true"></i></td>
+        </tr>
+        <br>
+      </ng-container>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="container-fluid" [ngClass]="boxModel?'d-block':'d-none'" id="box-model" box-model>
+  <div class="row">
+    <div class="col-sm-12 col-md-5 mx-auto">
+        <form (ngSubmit)="save(id,obj)">
+          <div class="mb-3">
+            <label class="form-label">الاسم</label>
+            <input type="text" class="form-control" name="name" id="name" [(ngModel)]="name">
+            <div id="nValidate" class="form-text"></div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">الوصف</label>
+            <input type="text" class="form-control" name="des" id="des" [(ngModel)]="des">
+            <div id="desValidate" class="form-text"></div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">الصورة</label>
+            <input type="text" class="form-control" name="img" id="img" [(ngModel)]="img">
+            <div id="imgValidate" class="form-text"></div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">السعر</label>
+            <input type="text" class="form-control" name="price" id="price" [(ngModel)]="price">
+            <div id="n" class="form-text"></div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">النوع</label>
+            <input type="text" class="form-control" name="kind" id="kind" [(ngModel)]="kind">
+            <div id="kindValidate" class="form-text"></div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">العدد</label>
+            <input type="text" class="form-control" name="count" id="count" [(ngModel)]="count">
+            <div id="countValidate" class="form-text"></div>
+          </div>
+
+          <input type="submit" class="btn" value="حفظ التعديل">
+        </form>
+    </div>
+  </div>
+</div>

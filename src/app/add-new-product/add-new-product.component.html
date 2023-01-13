@@ -1,0 +1,84 @@
+<div class="container-fluid">
+  <div class="row">
+    <form class="col-sm-12 col-md-7 mx-auto" [formGroup]="addProdForm" (ngSubmit)="addProduct()">
+     <div class="text-center mt-3"><h1>اضافة وجبة</h1></div>
+     <div class="row">
+      <div class="col-6">
+        <label>اسم الأكلة</label>
+        <input class="form-control" type="text" formControlName="mealName">
+       </div>
+       <div class="col-6">
+        <label>صورة الأكلة</label>
+        <input class="form-control" type="text" formControlName="mealImg">
+       </div>
+       <div class="col-6">
+        <label>السعر</label>
+        <input type="text" class="form-control" formControlName="price">
+       </div>
+       <div class="col-6">
+        <label>النوع</label>
+        <select class="form-select" #select formControlName="kind" >
+          <option selected></option>
+          <option value="mainDish">الطبق الرئيسي</option>
+          <option value="sideItems">إضافات جانبية</option>
+          <option value="moqbelat">مقبلات</option>
+          <option value="drinks">مشروبات</option>
+          <option value="dessert">حلويات</option>
+          <option value="mqlo">مقلو برِس</option>
+        </select>
+       </div>
+       <div class="col-12" *ngIf="select.value =='mainDish'">
+        <label>وصف الأكلة</label>
+        <textarea class="form-control" rows="5" formControlName="mealDescription"></textarea>
+       </div>
+     </div>
+
+     <div class="row" formGroupName="small" *ngIf="select.value =='mainDish'">
+      <label>الحجم الصغير</label>
+       <div class="col-6">
+        <input type="number" formControlName="price" class="form-control" placeholder="السعر">
+       </div>
+       <div class="col-6">
+        <input type="number" formControlName="calories" class="form-control" placeholder="السعرات الحرارية">
+       </div>
+     </div>
+
+     <div class="row" formGroupName="medium" *ngIf="select.value =='mainDish'">
+      <label>الحجم الوسط</label>
+       <div class="col-6">
+        <input type="number" class="form-control" placeholder="السعر" formControlName="price">
+       </div>
+       <div class="col-6">
+        <input type="number" class="form-control" placeholder="السعرات الحرارية" formControlName="calories">
+       </div>
+     </div>
+
+     <div class="row" formGroupName="large" *ngIf="select.value =='mainDish'">
+      <label>الحجم الكبير</label>
+       <div class="col-6">
+        <input type="number" class="form-control" placeholder="السعر" formControlName="price">
+       </div>
+       <div class="col-6">
+        <input type="number" class="form-control" placeholder="السعرات الحرارية" formControlName="calories">
+       </div>
+     </div>
+
+     <div class="row" formGroupName="family" *ngIf="select.value =='mainDish'">
+      <label class="d-block">الحجم العائلي</label>
+      <div class="col-6">
+        <input type="number" class="form-control" placeholder="السعر" formControlName="price">
+      </div>
+      <div class="col-6">
+        <input type="number" class="form-control" placeholder="السعرات الحرارية" formControlName="calories">
+      </div>
+     </div>
+
+     <input type="submit" class="form-control" value="اضافة">
+    </form>
+  </div>
+</div>
+
+
+
+
+

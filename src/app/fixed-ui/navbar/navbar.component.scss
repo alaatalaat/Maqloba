@@ -1,0 +1,17 @@
+nav{
+  background:#7f7f7f;position:sticky;top:0px;z-index:1000;
+  ul{
+    li{
+      list-style-type:none;
+      a{
+        color:#fff;font-weight:bold;
+      }
+    }
+  }
+  img{cursor:pointer;}
+}
+.fa-shopping-bag,.fa-user-circle-o{color:#fff;font-size:20px;cursor:pointer;}
+.navbar li{list-style-type:none;}
+.navbar li a{color:#fff;}
+.active{background:rgba(000,000,000,0.1);border-radius:5px;}
+.active-tab{color:#F99E22;}

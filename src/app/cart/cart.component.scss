@@ -1,0 +1,15 @@
+#box-model{
+  width:100%;height:100%;z-index:99;position:fixed;top:75px;bottom:0px;
+  background-color:rgba(72, 75, 84,0.9);
+  label{color:#fff;font-weight:bold;}
+  input{box-shadow:none;}
+  input[type="submit"]{background:#F99E22;color:#fff;}
+}
+.fa-pencil-square-o,.fa-trash-o{font-size:20px;font-weight:bold;cursor:pointer;}
+.fa-trash-o{color:rgb(219, 64, 64);margin-top:15px;}
+.fa-pencil-square-o{color:#F99E22;margin-top:15px;}
+tr{
+  padding-top:20px;border:1px solid #484b54;
+  background:#484b54;color:#fff;height:60px;
+}
+tr td{border:none;}
